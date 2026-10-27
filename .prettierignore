@@ -1,0 +1,13 @@
+node_modules
+.next
+.venv
+package-lock.json
+shared/contracts/openapi.json
+public/fonts
+apps/frontend/public/fonts
+*.py
+*.toml
+*.txt
+
+apps/frontend/data/imports
+apps/frontend/data/runtime
