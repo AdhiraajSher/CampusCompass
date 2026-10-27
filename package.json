@@ -1,0 +1,24 @@
+{
+  "name": "campuscompass",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/frontend"
+  ],
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace @campuscompass/frontend",
+    "lint": "npm run lint --workspace @campuscompass/frontend",
+    "typecheck": "npm run typecheck --workspace @campuscompass/frontend",
+    "test": "npm run test --workspace @campuscompass/frontend",
+    "build": "npm run build --workspace @campuscompass/frontend",
+    "start": "npm run start --workspace @campuscompass/frontend",
+    "format": "prettier --write apps/frontend shared docs FRONTEND.md package.json .github",
+    "format:check": "prettier --check apps/frontend shared docs FRONTEND.md package.json .github"
+  },
+  "devDependencies": {
+    "prettier": "3.9.10"
+  }
+}

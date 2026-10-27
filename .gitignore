@@ -147,3 +147,10 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# Frontend local inputs, runtime records and development caches
+/node_modules
+apps/frontend/data/imports/
+apps/frontend/data/runtime/
+.DS_Store
+!.env.*.example

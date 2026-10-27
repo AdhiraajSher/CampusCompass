@@ -1,5 +1,7 @@
 # CampusCompass — Adaptive Student Intervention System (ASIS)
 
+The latest runnable frontend is in `apps/frontend/`. See [FRONTEND.md](FRONTEND.md) for its setup, implemented features, API expectations and demo limitations. The broader project documentation below is retained for the team's backend and AI integration work.
+
 > *See the signs. Change the story.*
 
 CampusCompass (ASIS) is an AI-powered, event-driven platform that proactively identifies at-risk students, tracks daily well-being through conversational AI check-ins, and generates adaptive, multi-tiered intervention recommendations for educators and mentors. 
