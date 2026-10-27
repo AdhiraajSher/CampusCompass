@@ -3,7 +3,7 @@ from openai import OpenAI
 # Initialize client with OpenRouter's URL and your actual API key
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",  # Paste your OpenRouter key directly
+    api_key="#0#",  # Paste your OpenRouter key directly
 )
 
 def test_prompt():
