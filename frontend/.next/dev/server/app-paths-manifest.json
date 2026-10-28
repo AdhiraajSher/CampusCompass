@@ -1,0 +1,10 @@
+{
+  "/api/demo-session/route": "app/api/demo-session/route.js",
+  "/api/checkin/status/route": "app/api/checkin/status/route.js",
+  "/api/checkin/submit/route": "app/api/checkin/submit/route.js",
+  "/api/students/route": "app/api/students/route.js",
+  "/demo/page": "app/demo/page.js",
+  "/page": "app/page.js",
+  "/student/page": "app/student/page.js",
+  "/workspace/page": "app/workspace/page.js"
+}
