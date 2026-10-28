@@ -3,9 +3,9 @@ import {
   factors,
   type CheckIn,
   type CCResult,
-} from "./cc-score.ts";
-import type { Identity } from "./domain.ts";
-import { sortTasks, type StaffTask, type TaskStatus } from "./task-types.ts";
+} from "./cc-score";
+import type { Identity } from "./domain";
+import { sortTasks, type StaffTask, type TaskStatus } from "./task-types";
 
 export class AccessError extends Error {
   status = 403;

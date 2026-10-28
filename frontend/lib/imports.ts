@@ -1,6 +1,6 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { academicTasks, importAcademic } from "./csv-priority.ts";
+import { academicTasks, importAcademic } from "./csv-priority";
 
 export function importSnapshot() {
   const folder = join(process.cwd(), "data", "imports");
@@ -13,7 +13,11 @@ export function importSnapshot() {
       "Both local import files are required: attendance.csv and students.csv.",
     );
   const local = hasAttendance && hasStudents;
-  const samples = join(process.cwd(), "..", "..", "shared", "fixtures");
+  const samples = existsSync(join(process.cwd(), "fixtures"))
+    ? join(process.cwd(), "fixtures")
+    : existsSync(join(process.cwd(), "..", "shared", "fixtures"))
+      ? join(process.cwd(), "..", "shared", "fixtures")
+      : join(process.cwd(), "..", "..", "shared", "fixtures");
   const report = importAcademic(
     readFileSync(
       local ? attendancePath : join(samples, "attendance.sample.csv"),

@@ -37,6 +37,7 @@ export type Identity = {
   role: Role;
   title: string;
   studentId?: string;
+  email?: string;
 };
 export const identities: Identity[] = [
   {

@@ -1,4 +1,4 @@
-import type { StaffTask } from "./task-types.ts";
+import type { StaffTask } from "./task-types";
 
 export type AcademicRecord = {
   id: string;

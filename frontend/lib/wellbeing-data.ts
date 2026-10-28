@@ -1,10 +1,10 @@
-import type { Identity } from "./domain.ts";
+import type { Identity } from "./domain";
 import {
   calculateCC,
   type CheckIn,
   type Rating,
   type WellbeingProfile,
-} from "./cc-score.ts";
+} from "./cc-score";
 type Seed = {
   id: string;
   name: string;

@@ -1,0 +1,5 @@
+student_id,name,attendance_rate,consecutive_absences
+SAMPLE-001,Sample Student A,70,5
+SAMPLE-002,Sample Student B,82,3
+SAMPLE-003,Sample Student C,96,0
+SAMPLE-004,Sample Student D,94,0

@@ -25,6 +25,10 @@ export function createDemoToken(id: string) {
   ).toString("base64url");
   return `${payload}.${createHmac("sha256", key).update(payload).digest("base64url")}`;
 }
+export function createSessionToken(identityOrId: Identity | string) {
+  const id = typeof identityOrId === "string" ? identityOrId : identityOrId.id;
+  return createDemoToken(id);
+}
 export async function getIdentity(): Promise<Identity | null> {
   const value = (await cookies()).get(cookieName)?.value;
   if (!value) return null;

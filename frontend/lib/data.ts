@@ -1,5 +1,5 @@
-import type { Student, Identity } from "./domain.ts";
-import seed from "../../../shared/fixtures/students.json" with { type: "json" };
+import type { Student, Identity } from "./domain";
+import seed from "./students.json";
 const fixtures = seed as Student[];
 /** Scope on the server, before serialization. Hidden staff fields never reach mentor clients. */
 export function studentsFor(identity: Identity): Student[] {
