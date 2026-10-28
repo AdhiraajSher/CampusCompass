@@ -10,9 +10,16 @@ Features:
 - Host-Ready CORS & Health endpoints.
 """
 import os
+import sys
 import uuid
 from datetime import date
+from pathlib import Path
 from typing import Annotated, Any, Optional
+
+# Ensure the backend directory is in sys.path so local imports work from anywhere
+BACKEND_DIR = Path(__file__).resolve().parent
+if str(BACKEND_DIR) not in sys.path:
+    sys.path.insert(0, str(BACKEND_DIR))
 
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware

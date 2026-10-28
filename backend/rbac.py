@@ -10,9 +10,16 @@ import hashlib
 import hmac
 import json
 import os
+import sys
 import time
+from pathlib import Path
 from typing import Annotated, Callable, Optional
 from dataclasses import dataclass, asdict
+
+# Ensure the backend directory is in sys.path so local imports work from anywhere
+BACKEND_DIR = Path(__file__).resolve().parent
+if str(BACKEND_DIR) not in sys.path:
+    sys.path.insert(0, str(BACKEND_DIR))
 
 try:
     from fastapi import Depends, Header, HTTPException, status
