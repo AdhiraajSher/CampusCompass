@@ -1,6 +1,0 @@
-student_id,name,attendance_rate,consecutive_absences,grades__math,grades__english,grades__science,past_interventions__type,past_interventions__status,past_interventions__date
-SAMPLE-001,Sample Student A,70,5,55,60,58,Warning Email,Failed,2026-10-01
-,,,,,,,Faculty Mentorship,Failed,2026-10-12
-SAMPLE-002,Sample Student B,82,3,68,72,70,Peer Tutoring,Active,2026-10-20
-SAMPLE-003,Sample Student C,96,0,85,90,92,Study Planning,Successful,2026-10-20
-SAMPLE-004,Sample Student D,94,0,82,86,88,Peer Tutoring,Active,2026-10-20
