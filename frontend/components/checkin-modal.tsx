@@ -42,7 +42,7 @@ export function CheckinModal({ studentName, onCompleted }: CheckinModalProps) {
           );
           setOpen(true);
         }
-      } catch (err) {
+      } catch {
         console.warn("Could not fetch check-in status:", err);
       } finally {
         if (!cancelled) setLoading(false);
@@ -78,7 +78,7 @@ export function CheckinModal({ studentName, onCompleted }: CheckinModalProps) {
       setTimeout(() => {
         setOpen(false);
       }, 2200);
-    } catch (err) {
+    } catch {
       alert("Failed to save check-in. Please try again.");
     } finally {
       setSubmitting(false);

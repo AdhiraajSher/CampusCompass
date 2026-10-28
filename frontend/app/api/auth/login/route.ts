@@ -1,5 +1,4 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { createHmac } from "node:crypto";
 import { workspaceFor, type Role, type Identity } from "@/lib/domain";
 import { createSessionToken, sessionCookie } from "@/lib/session";
 

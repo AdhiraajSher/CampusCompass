@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
 
     const data = await response.json();
     return NextResponse.json(data);
-  } catch (err) {
+  } catch {
     return NextResponse.json({
       status: "success",
       mood_score: 3,

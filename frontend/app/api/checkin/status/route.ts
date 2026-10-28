@@ -27,7 +27,7 @@ export async function GET() {
 
     const data = await response.json();
     return NextResponse.json(data);
-  } catch (err) {
+  } catch {
     return NextResponse.json({
       status: "pending",
       question: `Hey ${identity.name.split(" ")[0]}, how are you holding up with your classes and energy today?`,
