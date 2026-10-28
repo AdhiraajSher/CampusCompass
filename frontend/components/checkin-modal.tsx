@@ -42,7 +42,7 @@ export function CheckinModal({ studentName, onCompleted }: CheckinModalProps) {
           );
           setOpen(true);
         }
-      } catch {
+      } catch (err) {
         console.warn("Could not fetch check-in status:", err);
       } finally {
         if (!cancelled) setLoading(false);
