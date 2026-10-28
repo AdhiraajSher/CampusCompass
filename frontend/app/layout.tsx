@@ -4,9 +4,9 @@ import "./globals.css";
 import "./cc-score.css";
 import "./student-tasks.css";
 export const metadata: Metadata = {
-  title: "CampusCompass — Every student. A way forward.",
+  title: "CampusCompass v2 — Adaptive Student Intervention System",
   description:
-    "Adaptive student support for educators, batch managers, and mentors. Interactive hackathon prototype.",
+    "Next-generation student support with research-informed CC Score, 1-minute daily AI check-ins, and adaptive intervention workflows.",
 };
 export default function RootLayout({
   children,
